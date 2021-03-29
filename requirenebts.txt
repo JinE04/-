@@ -1,0 +1,2 @@
+dicord.py==0.16.12
+random.py==0.16.12
