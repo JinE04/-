@@ -122,5 +122,5 @@ async def on_message(message):
               await message.channel.send(d)
               
               
-sccess_token = os.environ["BOT_TOKEN"]
+sccess_token = os.environ['BOT_TOKEN']
 client.run(access_token)
