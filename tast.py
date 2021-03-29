@@ -1,5 +1,6 @@
 import discord
 import random
+import os
 var = ["졸고 있는 앤캐를 봤을때 자캐는", "잠들어있는 앤캐를 본 자캐는", "앤캐의 잠자는 모습을 보는 자캐의 반응", "앤캐와 나란히 잘 때 자캐의 자세는",
        "동거 첫날 자신의 곁에 잠든 앤캐를 본 자캐의 반응", "연인이 어깨에 기대어 잠든다면 자캐는", "앤캐와 같이 자고 일어난 아침 자캐는", "앤캐보다 일찍 일어난 자캐가 앤캐를 깨우는 방법",
        "앤캐보다 늦게 잠드는 자캐가 앤캐의 잠든 얼굴 보면서 하는 생각", "밤에 앤캐가 잠이 안 온다고 말한다면 자캐는", "자캐가 앤캐에게 자장가를 불러준다면",
@@ -119,5 +120,7 @@ async def on_message(message):
               ran = random.randint(0, len(var))
               d =var[ran]
               await message.channel.send(d)
-
-client.run("ODIyMDgxMzExNTU2NTAxNTI0.YFNE4g.oZgZhOiIlVo1HhZGsLLRP8FxuK0")
+              
+              
+sccess_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
